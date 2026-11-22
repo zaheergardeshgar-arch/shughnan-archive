@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHUGHNAN ARCHIVE | آرشیف شغنان</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Tahoma,Arial,sans-serif;
+ background:#f5f3ee;
+ color:#26352c;
+ line-height:1.9;
+}
+header{
+ background:#182820;
+ color:white;
+ padding:18px 7%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-wrap:wrap;
+ gap:12px;
+}
+.logo{
+ font-size:21px;
+ font-weight:bold;
+ letter-spacing:1px;
+}
+nav{
+ display:flex;
+ flex-wrap:wrap;
+ gap:18px;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ font-size:14px;
+}
+nav a:hover{color:#c6a66b}
+.hero{
+ background:linear-gradient(120deg,#182820,#405a46);
+ color:white;
+ text-align:center;
+ padding:85px 8%;
+}
+.hero h1{
+ font-size:38px;
+ margin:0 0 12px;
+}
+.hero p{
+ color:#e3e9df;
+ font-size:16px;
+ max-width:650px;
+ margin:0 auto 25px;
+}
+.hero button{
+ background:#c6a66b;
+ color:#182820;
+ border:0;
+ padding:12px 28px;
+ border-radius:5px;
+ font-size:15px;
+ cursor:pointer;
+ font-weight:bold;
+}
+section{padding:55px 8%}
+.section-title{
+ text-align:center;
+ font-size:27px;
+ margin-bottom:12px;
+ color:#263c2d;
+}
+.intro{
+ text-align:center;
+ max-width:750px;
+ margin:0 auto 35px;
+ color:#666;
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;
+}
+.card{
+ background:white;
+ padding:25px;
+ border-radius:9px;
+ border-bottom:4px solid #c6a66b;
+ box-shadow:0 4px 15px rgba(0,0,0,.06);
+ transition:.3s;
+}
+.card:hover{
+ transform:translateY(-5px);
+}
+.card .symbol{
+ font-size:32px;
+}
+.card h3{
+ color:#405a46;
+ margin:8px 0;
+}
+.card p{
+ color:#666;
+ font-size:14px;
+}
+.about{
+ background:#e9e7df;
+}
+.about-content{
+ max-width:800px;
+ margin:auto;
+ text-align:center;
+}
+.about-content p{color:#555}
+footer{
+ background:#182820;
+ color:white;
+ text-align:center;
+ padding:30px 15px;
+ font-size:13px;
+}
+footer p{margin:5px}
+footer span{color:#c6a66b}
+@media(max-width:600px){
+ header{justify-content:center;text-align:center}
+ nav{justify-content:center;gap:12px}
+ .hero{padding:65px 6%}
+ .hero h1{font-size:29px}
+ section{padding:42px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">SHUGHNAN ARCHIVE</div>
+ <nav>
+  <a href="#home">خانه</a>
+  <a href="#archive">آرشیف</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس</a>
+ </nav>
+</header>
+
+<div class="hero" id="home">
+ <h1>آرشیف دیجیتالی شغنان</h1>
+ <p>
+ دریچه‌ای به تاریخ، فرهنگ، زبان و میراث سرزمین شغنان؛
+ برای نگهداری گذشته و شناخت هویت فرهنگی نسل‌های آینده.
+ </p>
+ <button onclick="document.getElementById('archive').scrollIntoView()">
+ کشف آرشیف
+ </button>
+</div>
+
+<section id="archive">
+ <h2 class="section-title">بخش‌های آرشیف</h2>
+ <p class="intro">
+ میراث شغنان را در بخش‌های گوناگون جستجو و کشف کنید.
+ این مجموعه با هدف گردآوری و حفظ اطلاعات فرهنگی و تاریخی ایجاد شده است.
+ </p>
+
+ <div class="cards">
+
+  <div class="card">
+   <div class="symbol">📜</div>
+   <h3>تاریخ شغنان</h3>
+   <p>روایت‌ها، رویدادها، پیشینه تاریخی و اسناد مربوط به سرزمین شغنان.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🏔️</div>
+   <h3>جغرافیا و روستاها</h3>
+   <p>معرفی مناطق، روستاها، کوه‌ها، دره‌ها و طبیعت زیبای شغنان.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🎭</div>
+   <h3>فرهنگ و سنت‌ها</h3>
+   <p>آداب و رسوم، جشن‌ها، موسیقی، پوشاک و میراث فرهنگی مردم شغنان.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🔤</div>
+   <h3>زبان شغنی</h3>
+   <p>واژگان، اصطلاحات، ادبیات شفاهی و میراث زبانی مردم شغنان.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">📷</div>
+   <h3>گالری تصاویر</h3>
+   <p>مجموعه‌ای از عکس‌ها و اسناد تصویری قدیمی و معاصر شغنان.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">👤</div>
+   <h3>شخصیت‌های برجسته</h3>
+   <p>زندگی‌نامه و معرفی شخصیت‌های علمی، فرهنگی، تاریخی و اجتماعی شغنان.</p>
+  </div>
+
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="about-content">
+  <h2 class="section-title">درباره SHUGHNAN ARCHIVE</h2>
+  <p>
+  SHUGHNAN ARCHIVE یک پروژه دیجیتالی مستقل برای گردآوری،
+  مستندسازی و حفظ تاریخ، فرهنگ، زبان و میراث مردم شغنان است.
+  </p>
+  <p>
+  هدف این پروژه ایجاد یک منبع اطلاعاتی برای پژوهشگران،
+  دانشجویان، نسل جوان و تمام علاقه‌مندان به شناخت شغنان است.
+  </p>
+  <p>
+  ما باور داریم که میراث فرهنگی باید ثبت شود تا در گذر زمان فراموش نگردد.
+  </p>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="section-title">مشارکت در آرشیف</h2>
+ <p class="intro">
+ عکس‌ها، اسناد، خاطرات، روایت‌ها و معلومات تاریخی خود را
+ برای غنی‌سازی آرشیف شغنان جمع‌آوری و مستند کنید.
+ </p>
+</section>
+
+<footer>
+ <p><span>SHUGHNAN ARCHIVE</span> © 2026</p>
+ <p>Preserving the Heritage of Shughnan</p>
+ <p>تاریخ را حفظ کنیم، هویت را زنده نگه داریم.</p>
+</footer>
+
+</body>
+</html>
